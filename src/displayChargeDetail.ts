@@ -13,6 +13,6 @@ export const displayChargeDetail = ({ price, paid }: TDisplayChargeDetail) => {
   // 最終的なアウトプット
   console.log(`お釣りは、${change}円です`)
   changeResultArray.forEach((value: Change) => {
-    cosole.log(value.displayDetail())
+    console.log(value.displayDetail())
   })
 }
