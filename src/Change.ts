@@ -1,10 +1,17 @@
+type TChange = {
+  value: number;
+  count: number;
+}
+
 // お釣りクラスを定義
 class Change {
   value: number;
   count: number;
   type: "硬貨" | "紙幣"
 
-  constructor(value: number, count: number) {
+  constructor(
+    { value, count }: TChange
+  ) {
     this.value = value;
     this.count = count
 
